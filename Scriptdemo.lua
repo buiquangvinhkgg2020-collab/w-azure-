@@ -35,13 +35,17 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
 ------- BUTTON
     
     AddButton(Tab1o, {
-     Name = "AutoFram",
+     Name = "ESP",
     Callback = function()
 	  local Settings = {
   JoinTeam = "Pirates"; -- Pirates/Marines
   Translator = true; -- true/false
 }
 
-AutoFram = true
+local colourTable = {
+Green = Color3. fromGB (0,255,0),
+Blue = Color3.fromGB (0,0,255),
+}
+local colourChosen = colourTable.Green(Settings)
   end
   })
